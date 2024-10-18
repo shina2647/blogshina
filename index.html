@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="cat.ico" type="image">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Gallery!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search">
+        <h2>Search</h2>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search blog posts..."/>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="cuteicon.jpg" alt="Myself" style="width: 200px; border-radius: 50%;">
+        <p>Hi everyone! It's so nice to meet you guys:3 I'm Shinta, you can call me Shin yaaaa:D <br>
+            I enjoy drawing, singing, cooking, writing, AAAAAAAAA pokoknya i love to do a lot of things!</p>
+    </section>
+
+    <!-- section id="about">
+        <h2>About Me</h2>
+        <img src="cuteicon.jpg" alt="My Obsession" style="border-radius: 50%; width: 150px; height: 150px;">
+        <p>Hi everyone! It's so nice to meet you guys:3 I'm Shinta, you can call me Shin yaaaa:D <br>
+            I like drawing, singing, cooking, writing, AAAAAAAAA pokoknya i love to do a lot of things!</p>
+        <button>Learn More</button>
+    </section -->
+
+    <section id="gallery">
+        <h2> My Gallery</h2>
+        <div class="slider">
+            <div class="slide">
+                <img src="greenbg.jpg" alt="Beautiful Background">
+            </div>
+            <div class="slide">
+                <img src="cuteicon.jpg" alt="Totoro">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- section id="gallery">
+        <h2>My Gallery</h2>
+        <div id="gallery-images">
+            <img src="greenbg.jpg" alt="Beautiful Background">
+            <img src="cuteicon.jpg" alt="Totoro">
+        </div>
+    </section-->
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div>
+            <p>Design Project</p>
+            <p>Character Illustration</p>
+            <p>Photography</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-card">
+            <h3>First Post: Design Inspiration</h3>
+            <p><em>Posted on: October 18, 2024</em></p>
+            <img src="persona.png" alt="Blog Post 1" style="width: 100%; border-radius: 10px;">
+            <p>How to pick color and dress your Original Character.</p>
+            <h4>Comments</h4>
+            <div class="comments">
+                <input type="text" placeholder="Add a comment..."/>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+        <div class="blog-card">
+            <h3>Second Post: Character Design Tips</h3>
+            <p><em>Posted on: October 19, 2024</em></p>
+            <img src="erza.jpg" alt="Blog Post 2" style="width: 100%; border-radius: 10px;">
+            <p>How to start to make your own character.</p>
+            <h4>Comments</h4>
+            <div class="comments">
+                <input type="text" placeholder="Add a comment..."/>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section -->
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your Name"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your Email"><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <p>Drawing</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>English</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 50%;">50%</div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer>
+        <p>&copy; <span id="current-year"></span> Shinaaapr.</p>
+
+        <p>Follow me on</p>
+            <a href="https://www.instagram.com/shinaaapr" target="_blank">
+                <img src="instalogo.png" alt="Instagram" style="width: 30px;">
+            </a>
+            <a href="https://www.tiktok.com/johesamaaa" target="_blank">
+                <img src="tiktoklogo.png" alt="Tiktok" style="width: 30px;">
+            </a>
+            <a href="https://www.Twitter.com/shin_kitaa" target="_blank">
+                <img src="twitterlogo.png" alt="Twiter" style="width: 30px;">
+            </a>
+    </footer -->
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Shinaaapr.</p>
+        <p>Follow me on</p>
+        <div class="social media">
+            <a href="https://www.instagram.com/shinaaapr" target="_blank">
+                <img src="instalogo.png" alt="Instagram" style="width: 30px;">
+            </a>
+            <a href="https://www.tiktok.com/johesamaaa" target="_blank">
+                <img src="tiktoklogo.png" alt="Tiktok" style="width: 30px;">
+            </a>
+            <a href="https://www.Twitter.com/shin_kitaa" target="_blank">
+                <img src="twitterlogo.png" alt="Twiter" style="width: 30px;">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const blogCards = document.querySelectorAll('.blog-card');
+
+            blogCards.forEach(card => {
+                const title = card.querySelector('h3').innerText.toLowerCase();
+                const content = card.querySelector('p').innerText.toLowerCase();
+
+                if (title.includes(query) || content.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <button id="back-to-top" style="display: none;">Back to Top</button>
+
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth'});
+        });
+    </script>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++; if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+
+        function changeSlide(n) {
+            slideIndex += n;
+            const slides = document.getElementsByClassName("slide");
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            if (slideIndex < 1) {
+                slideIndex = slides.length;
+            }
+            showSlides(slideIndex);
+        }
+    </script>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = this[0].value;
+            const email = this[1].value;
+            const message = this[2].value;
+
+            alert(`Thank you, ${name}! Your message has been sent.`);
+
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
